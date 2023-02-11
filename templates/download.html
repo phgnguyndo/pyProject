@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/statics/image/download2.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="/statics/download.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="wrap_dl">
+      <div class="header">
+        <img src="/statics/image/download2.png" alt="" />
+        <p>DowloadVideoYT</p>
+        <a href="">About us</a>
+      </div>
+      <div class="body">
+        <h1>Welcome! Dowload video from youtobe</h1>
+        <img src="{{url.thumbnail_url}}" alt="" />
+        <h1>{{url.title}}</h1>
+        <form class="form" action="{{url_for('download')}}" method="POST">
+          <div id="pixel" name="itag">
+            {% for i in url.streams.filter(progressive=True) %}
+
+            <button id="chooseDl" value="{{i.itag}}">
+              {{i.resolution}}
+            </button>
+
+            {% endfor %}
+          </div>
+        </form>
+      </div>
+      <div class="end">
+        <div id="end_top"><p>LẬP TRÌNH AN TOÀN THÔNG TIN - GV: TS.PHẠM THANH SƠN</p></div>
+        <div id="end_lmr">
+          <div id="end_left">
+            <p>Đỗ Nguyên Phương</p><br>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div id="end_left">
+            <p>Nguyễn Anh Nam</p><br>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div id="end_left">
+            <p>Nguyễn Duy Phương</p><br>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+        <div id="end_top"><span>@ 2016 - 2023 nguyenphuongdo22@gmail.com</span></div>
+
+      </div>
+    </div>
+  </body>
+</html>

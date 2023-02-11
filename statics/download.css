@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+
+.wrap_dl{
+    width: 100%;
+    height: 1300px;
+    background-color: aliceblue;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(31,41,55);
+}
+.header>img{
+    float: left;
+    margin-left: 18%;
+    margin-top: 25px; 
+    width: 30px;
+    height: 30px;
+    border-radius: 4px
+}
+.header>p{
+    float: left;
+    color: rgb(113,120,130);
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+.header>a{
+    position: relative;
+    left: 750px;
+    top: 30px;
+    color: rgb(113,120,130);
+    text-decoration: none;
+}
+.body{
+    text-align: center;
+    margin-top: 10px;
+    width: 64%;
+    height: 1100px;
+    position: relative;
+    left: 18%;
+    background-color: white;
+    box-shadow:   0.5px 0.5px 0.5px 0.5px gainsboro;
+}
+.body>h1{
+    position: relative;
+    top: 20px;
+    color: rgb(113,120,130);
+    font-size: 25px;
+}
+.body>img{
+    margin-top: 50px;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.form{
+    margin-top: 25px;
+    width: 60%;
+    height: 390px;
+    position: relative;
+    left: 20%;
+}
+#pixel{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+#chooseDl{
+    cursor: pointer;
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none !important;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgb(143, 213, 143);
+}
+
+.end{
+    margin-top: 10px;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(31,41,55);
+}
+#end_top{
+    text-align: center;
+    width: 80%;
+    height: 20%;
+    position: relative;
+    left: 10%;
+    /* background-color: blueviolet; */
+}
+#end_top>p{
+    position: relative;
+    top:8px;
+    color: rgb(222, 226, 233);
+}
+#end_lmr{
+    width: 80%;
+    height: 58%;
+    position: relative;
+    left: 10%;
+    /* background-color: aqua; */
+}
+#end_left{
+    float: left;
+    width: 33.3%;
+    height:100%;
+    text-align: center;
+    /* box-shadow: 0.5px 0.5px 0.5px 0.5px gainsboro; */
+}
+#end_left>p{
+    color: rgb(113,120,130);
+    position: relative;
+    top: 20%;
+}
+#end_left>a{  
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 4px;
+   position: relative;
+   top:10px;
+   left: 24%;
+   margin-left: 20px;
+   margin-right: 20px;
+   cursor: pointer;
+}
+#end_left>a:hover{
+    background-color: rgb(223, 118, 118);
+}
+#end_left>a>i{
+    position: relative;
+    top: 8px;
+}
+#end_top>span{
+    position: relative;
+    top: 5px;
+    font-size: 16px;
+    color: rgb(222, 226, 233);
+}
