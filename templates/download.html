@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/statics/image/download2.png">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="/statics/image/download2.png" />
+    <title>Download video YT</title>
     <link rel="stylesheet" href="/statics/download.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="wrap_dl">
@@ -18,45 +21,67 @@
       </div>
       <div class="body">
         <h1>Welcome! Dowload video from youtobe</h1>
-        <img src="{{url.thumbnail_url}}" alt="" />
-        <h1>{{url.title}}</h1>
+        <div id="left">
+          <img src="{{url.thumbnail_url}}" alt="" />
+          <h1>{{url.title}}</h1>
+        </div>
         <form class="form" action="{{url_for('download')}}" method="POST">
-          <div id="pixel" name="itag">
+          <select id="pixel" name="itag">
             {% for i in url.streams.filter(progressive=True) %}
-
-            <button id="chooseDl" value="{{i.itag}}">
+            <option id="chooseDl" value="{{i.itag}}">
               {{i.resolution}}
-            </button>
-
+            </option>
             {% endfor %}
-          </div>
+          </select>
+          <button id="click" type="submit">Dowload</button>
         </form>
+        <div id="body_bot">
+          <div id="body_bot_left">
+            <img id="image1" src="/statics/image/choose2.png" alt="">
+            <h1>1. Choose resolution</h1>
+            <p>Click and choose resolution</p>
+            <img id="image2" src="/statics/image/DLb1.jpg" alt="">
+          </div>
+          <div id="body_bot_left">
+            <img id="image1" src="/statics/image/download.png" alt="">
+            <h1>2. Download</h1>
+            <p>Click download to download this video</p>
+            <img id="image2" src="/statics/image/DLb2.jpg" alt="">
+          </div>
+          
+        </div>
       </div>
+      
       <div class="end">
-        <div id="end_top"><p>LẬP TRÌNH AN TOÀN THÔNG TIN - GV: TS.PHẠM THANH SƠN</p></div>
+        <div id="end_top">
+          <p>LẬP TRÌNH AN TOÀN THÔNG TIN - GV: TS.PHẠM THANH SƠN</p>
+        </div>
         <div id="end_lmr">
           <div id="end_left">
-            <p>Đỗ Nguyên Phương</p><br>
+            <p>Đỗ Nguyên Phương</p>
+            <br />
             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
           <div id="end_left">
-            <p>Nguyễn Anh Nam</p><br>
+            <p>Nguyễn Anh Nam</p>
+            <br />
             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
           <div id="end_left">
-            <p>Nguyễn Duy Phương</p><br>
+            <p>Nguyễn Duy Phương</p>
+            <br />
             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
-
         </div>
-        <div id="end_top"><span>@ 2016 - 2023 nguyenphuongdo22@gmail.com</span></div>
-
+        <div id="end_top">
+          <span>@ 2016 - 2023 nguyenphuongdo22@gmail.com</span>
+        </div>
       </div>
     </div>
   </body>

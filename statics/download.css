@@ -7,7 +7,7 @@
 
 .wrap_dl{
     width: 100%;
-    height: 1300px;
+    height: 1150px;
     background-color: aliceblue;
 }
 .header{
@@ -41,51 +41,124 @@
     text-align: center;
     margin-top: 10px;
     width: 64%;
-    height: 1100px;
+    height: 935px;
     position: relative;
     left: 18%;
     background-color: white;
     box-shadow:   0.5px 0.5px 0.5px 0.5px gainsboro;
 }
+#left{
+    float: left;
+    position: relative;
+    top: 44px;
+    left: 20px;
+    border-radius: 8px;
+    width: 60%;
+    height: 500px;
+    /* background-color: antiquewhite; */
+}
 .body>h1{
     position: relative;
     top: 20px;
-    color: rgb(113,120,130);
-    font-size: 25px;
+    color: brown;
+    font-size: 30px;
 }
-.body>img{
-    margin-top: 50px;
-    width: 70%;
-    height: 500px;
-    border-radius: 10px;
+#left>h1{
+    position: relative;
+    top: 10px;
+    color: rgb(113,120,130);
+    font-size: 20px;
+}
+#left>img{
+    width: 100%;
+    height: 400px;
+    border-radius: 6px;
     background-size: cover;
 }
 .form{
+    text-align: center;
     margin-top: 25px;
-    width: 60%;
-    height: 390px;
+    width: 35%;
+    height: 200px;
     position: relative;
-    left: 20%;
+    left: 63%;
+    top:2.3%;
+    border-radius: 6px;
+    /* background-color: aqua;   */
 }
 #pixel{
-    position: relative;
-    top: 20px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: antiquewhite; */
-}
-#chooseDl{
-    cursor: pointer;
-    width: 80%;
-    height: 40px;
     border: none;
     outline: none !important;
-    border-radius: 5px;
-    margin-top: 20px;
-    background-color: rgb(143, 213, 143);
+    width: 100%;
+    height: 50px;
+     position: relative;
+     top: -475px;
+     border-radius: 5px;
+     text-align: center;
+    color: rgb(113,120,130);
+    font-weight: 600;
+    border: 0.1px solid rgb(182, 184, 187);
+}
+#pixel:hover{
+    font-weight: 600;
+    background-color: rgb(235, 203, 203);
+}
+#chooseDl{
+    color: rgb(113,120,130);
 }
 
+#click{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: none !important;
+    background-color: rgb(212, 101, 101);
+    position: relative;
+    top: -400px;
+    color: aliceblue;
+    font-weight: 600;
+    
+}
+#body_bot{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 320px;
+    /* background-color: blanchedalmond; */
+}
+#body_bot_left{
+    float: left;
+    position: relative;
+    top: -275px;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+#body_bot_left>#image1{
+    width: 60px;
+    height: 60px;
+}
+#body_bot_left>h1{
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(113,120,130);
+}
+#body_bot_left>p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+#body_bot_left>#image2{
+    margin-top: 10px;
+    border: 0.5px solid rgb(227, 231, 237);
+    border-radius: 5px;
+    /* background-color: rgb(182, 184, 187); */
+    width: 90%;
+    height: 200px;
+}
 .end{
     margin-top: 10px;
     width: 100%;

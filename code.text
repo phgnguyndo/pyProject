@@ -1,12 +1,12 @@
- <!-- <img src="{{url.thumbnail_url}}" />
+<img src="{{url.thumbnail_url}}" />
     <h1>{{url.title}}</h1>
     <form action="{{url_for('download')}}" method="POST">
       <div name="itag">
         {% for i in url.streams.filter(progressive=True) %}
 
-        <p value="{{i.itag}}">{{i.resolution}}</p>
+        <option value="{{i.itag}}">{{i.resolution}}</option>
 
         {% endfor %}
       </div>
       <button type="submit">Go Go</button>
-    </form> -->
+    </form> 
